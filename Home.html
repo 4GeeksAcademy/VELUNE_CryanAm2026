@@ -19,45 +19,7 @@
   </head>
 
   <body class="antialiased">
-    <!-- Componente reutilizable equivalente disponible en components/header.html -->
-    <header class="velune-header border-b border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPHeader">
-      <div class="max-w-7xl mx-auto px-6 py-5 lg:px-10">
-        <div class="flex flex-wrap items-center justify-between gap-5">
-          <a class="focus-ring flex-shrink-0" href="Home.html" aria-label="VELUNE, página de inicio" itemprop="url">
-            <img class="h-12 w-auto" src="VELUNE-imagotipo.svg" alt="VELUNE" itemprop="logo" />
-          </a>
-
-          <form class="order-3 w-full lg:order-none lg:w-auto lg:flex-1 lg:max-w-md lg:mx-12" action="catalogo.html" method="get" role="search">
-            <label class="sr-only" for="site-search">Buscar productos</label>
-            <div class="relative">
-              <input id="site-search" name="q" class="focus-ring w-full bg-transparent border-b border-current py-2 pr-10 placeholder-current placeholder-opacity-70" type="search" placeholder="Buscar en VELUNE" />
-              <button class="focus-ring absolute right-0 top-1/2 transform -translate-y-1/2 p-2" type="submit" aria-label="Enviar búsqueda">⌕</button>
-            </div>
-          </form>
-
-          <nav class="desktop-nav" aria-label="Navegación principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
-              <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
-              <li><a class="focus-ring velune-link" href="catalogo.html" itemprop="url">Catálogo</a></li>
-              <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
-            </ul>
-          </nav>
-
-          <details class="mobile-nav">
-            <summary class="focus-ring" aria-label="Abrir menú de navegación">
-              <img class="mobile-nav__icon" src="VELUNE-isotipo.svg" alt="Menú VELUNE" />
-            </summary>
-            <nav class="mobile-nav__panel" aria-label="Navegación móvil" itemscope itemtype="https://schema.org/SiteNavigationElement">
-              <ul class="text-sm uppercase tracking-widest">
-                <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
-                <li><a class="focus-ring velune-link" href="catalogo.html" itemprop="url">Catálogo</a></li>
-                <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
-              </ul>
-            </nav>
-          </details>
-        </div>
-      </div>
-    </header>
+    <!--#include virtual="components/header.html" -->
 
     <main>
       <section class="hero-panel text-white" aria-labelledby="hero-title">
@@ -134,37 +96,6 @@
       </section>
     </main>
 
-    <!-- Componente reutilizable equivalente disponible en components/footer.html -->
-    <footer class="velune-header border-t border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPFooter">
-      <div class="max-w-7xl mx-auto px-6 py-14 lg:px-10">
-        <div class="grid gap-10 md:grid-cols-3">
-          <section aria-labelledby="categories-title">
-            <h2 id="categories-title" class="mb-4 text-sm uppercase tracking-widest">Categorías</h2>
-            <ul class="space-y-2">
-              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=calzado">Calzado</a></li>
-              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=camisas">Camisas</a></li>
-              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=pantalones">Pantalones</a></li>
-              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=accesorios">Accesorios</a></li>
-            </ul>
-          </section>
-          <section aria-labelledby="legal-title">
-            <h2 id="legal-title" class="mb-4 text-sm uppercase tracking-widest">Legal</h2>
-            <ul class="space-y-2">
-              <li><a class="focus-ring velune-link" href="terminos.html">Términos y condiciones</a></li>
-              <li><a class="focus-ring velune-link" href="privacidad.html">Política de privacidad</a></li>
-              <li><a class="focus-ring velune-link" href="sobre-la-marca.html">Sobre la marca</a></li>
-            </ul>
-          </section>
-          <section aria-labelledby="contact-title">
-            <h2 id="contact-title" class="mb-4 text-sm uppercase tracking-widest">Contacto</h2>
-            <address class="not-italic leading-relaxed">
-              <a class="focus-ring velune-link" href="mailto:bonjour@velune.example">bonjour@velune.example</a><br />
-              Paris, France
-            </address>
-          </section>
-        </div>
-        <div class="mt-14 border-t border-red-900 border-opacity-10 pt-6 text-sm">© 2026 VELUNE. L'élégance en mouvement.</div>
-      </div>
-    </footer>
+    <!--#include virtual="components/footer.html" -->
   </body>
 </html>
