@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="https://schema.org/WebPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VELUNE: moda francesa de cortes precisos, materiales sensibles y elegancia en movimiento." />
+    <title>VELUNE | L'élégance en mouvement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <style>
+      :root {
+        --velune-noir: #171315;
+        --velune-bordeaux: #8f243c;
+        --velune-ivoire: #f1e9e2;
+        --velune-soie: #d7c8bc;
+      }
+
+      body { background: var(--velune-ivoire); color: var(--velune-noir); }
+      .velune-header { background: var(--velune-soie); color: var(--velune-bordeaux); }
+      .velune-title, .velune-link { color: var(--velune-bordeaux); }
+      .velune-link:hover { color: var(--velune-noir); }
+      .velune-button { background: var(--velune-bordeaux); color: var(--velune-ivoire); }
+      .velune-button:hover { background: var(--velune-noir); }
+      .hero-panel { background: linear-gradient(105deg, rgba(23, 19, 21, .95) 0%, rgba(23, 19, 21, .72) 48%, rgba(143, 36, 60, .28) 100%), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85') center/cover; }
+      .product-image { aspect-ratio: 4 / 5; object-fit: cover; }
+      .product-image--silk { background: linear-gradient(140deg, #d7c8bc, #8f243c); }
+      .product-image--noir { background: linear-gradient(140deg, #171315, #8f243c); }
+      .product-image--ivoire { background: linear-gradient(140deg, #f1e9e2, #d7c8bc); }
+      .product-image--rose { background: linear-gradient(140deg, #8f243c, #171315); }
+      .focus-ring:focus { outline: 2px solid var(--velune-bordeaux); outline-offset: 3px; }
+      .mobile-nav { display: none; }
+      .mobile-nav summary { list-style: none; cursor: pointer; }
+      .mobile-nav summary::-webkit-details-marker { display: none; }
+      @media (max-width: 767px) {
+        .desktop-nav { display: none; }
+        .mobile-nav { display: block; position: relative; }
+        .mobile-nav__icon { width: 2rem; height: 2.5rem; object-fit: contain; }
+        .mobile-nav__panel { position: absolute; right: 0; top: 3.25rem; z-index: 10; min-width: 12rem; padding: 1rem 1.25rem; background: var(--velune-ivoire); border: 1px solid rgba(143, 36, 60, .2); box-shadow: 0 12px 30px rgba(23, 19, 21, .12); }
+        .mobile-nav__panel li + li { margin-top: .8rem; }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VELUNE",
+        "url": "https://velune.example",
+        "description": "Marca francesa de moda contemporánea."
+      }
+    </script>
+  </head>
+
+  <body class="antialiased">
+    <header class="velune-header border-b border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPHeader">
+      <div class="max-w-7xl mx-auto px-6 py-5 lg:px-10">
+        <div class="flex flex-wrap items-center justify-between gap-5">
+          <a class="focus-ring flex-shrink-0" href="Home.html" aria-label="VELUNE, página de inicio" itemprop="url">
+            <img class="h-12 w-auto" src="VELUNE-imagotipo.svg" alt="VELUNE" itemprop="logo" />
+          </a>
+
+          <form class="order-3 w-full lg:order-none lg:w-auto lg:flex-1 lg:max-w-md lg:mx-12" action="catalogo.html" method="get" role="search">
+            <label class="sr-only" for="site-search">Buscar productos</label>
+            <div class="relative">
+              <input id="site-search" name="q" class="focus-ring w-full bg-transparent border-b border-current py-2 pr-10 placeholder-current placeholder-opacity-70" type="search" placeholder="Buscar en VELUNE" />
+              <button class="focus-ring absolute right-0 top-1/2 transform -translate-y-1/2 p-2" type="submit" aria-label="Enviar búsqueda">⌕</button>
+            </div>
+          </form>
+
+          <nav class="desktop-nav" aria-label="Navegación principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
+              <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+              <li><a class="focus-ring velune-link" href="catalogo.html" itemprop="url">Catálogo</a></li>
+              <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+            </ul>
+          </nav>
+
+          <details class="mobile-nav">
+            <summary class="focus-ring" aria-label="Abrir menú de navegación">
+              <img class="mobile-nav__icon" src="VELUNE-isotipo.svg" alt="Menú VELUNE" />
+            </summary>
+            <nav class="mobile-nav__panel" aria-label="Navegación móvil" itemscope itemtype="https://schema.org/SiteNavigationElement">
+              <ul class="text-sm uppercase tracking-widest">
+                <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+                <li><a class="focus-ring velune-link" href="catalogo.html" itemprop="url">Catálogo</a></li>
+                <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+              </ul>
+            </nav>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-panel text-white" aria-labelledby="hero-title">
+        <div class="max-w-7xl mx-auto px-6 py-32 lg:px-10 lg:py-48">
+          <p class="mb-5 text-sm uppercase tracking-widest text-gray-200">Collection 01 · Paris</p>
+          <h1 id="hero-title" class="max-w-2xl text-5xl leading-tight font-serif md:text-7xl">La sensualidad de lo que no se revela por completo.</h1>
+          <p class="mt-7 max-w-lg text-lg leading-relaxed text-gray-100">Una presencia construida mediante cortes precisos, movimiento, tacto y misterio.</p>
+          <a class="focus-ring velune-button inline-block mt-10 px-7 py-4 text-sm uppercase tracking-widest" href="catalogo.html">Descubrir la colección</a>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-6 py-20 lg:px-10" aria-labelledby="new-arrivals-title">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <p class="text-sm uppercase tracking-widest velune-title">Sélection VELUNE</p>
+            <h2 id="new-arrivals-title" class="velune-title mt-2 text-4xl font-serif">Nuevos lanzamientos</h2>
+          </div>
+          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalogo.html">Ver catálogo</a>
+        </div>
+        <div class="flex gap-6 overflow-x-auto pb-4" itemscope itemtype="https://schema.org/ItemList">
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--silk rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Robe Sillage</h3>
+            <p class="mt-1" itemprop="description">Seda fluida en rouge désir.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--noir rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Veste Ligne</h3>
+            <p class="mt-1" itemprop="description">Corte preciso en noir velours.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--ivoire rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Chemise Peau</h3>
+            <p class="mt-1" itemprop="description">Textura ligera en ivoire peau.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--rose rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Pantalon Élan</h3>
+            <p class="mt-1" itemprop="description">Una silueta que acompaña el movimiento.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-6 pb-24 lg:px-10" aria-labelledby="bestsellers-title">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <p class="text-sm uppercase tracking-widest velune-title">Le choix de la maison</p>
+            <h2 id="bestsellers-title" class="velune-title mt-2 text-4xl font-serif">Más vendidos</h2>
+          </div>
+          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalogo.html">Explorar piezas</a>
+        </div>
+        <div class="flex gap-6 overflow-x-auto pb-4" itemscope itemtype="https://schema.org/ItemList">
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--noir rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Top Mystère</h3>
+            <p class="mt-1" itemprop="description">Una línea esencial en negro carbón.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--rose rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Sac Désir</h3>
+            <p class="mt-1" itemprop="description">Accesorio estructurado en rojo burdeos.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--ivoire rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Pantalon Silence</h3>
+            <p class="mt-1" itemprop="description">Volumen relajado en gris seda.</p>
+          </article>
+          <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
+            <div class="product-image product-image--silk rounded-sm"></div>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name">Écharpe Contact</h3>
+            <p class="mt-1" itemprop="description">Un gesto suave para completar la silueta.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="velune-header border-t border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPFooter">
+      <div class="max-w-7xl mx-auto px-6 py-14 lg:px-10">
+        <div class="grid gap-10 md:grid-cols-3">
+          <section aria-labelledby="categories-title">
+            <h2 id="categories-title" class="mb-4 text-sm uppercase tracking-widest">Categorías</h2>
+            <ul class="space-y-2">
+              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=calzado">Calzado</a></li>
+              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=camisas">Camisas</a></li>
+              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=pantalones">Pantalones</a></li>
+              <li><a class="focus-ring velune-link" href="catalogo.html?categoria=accesorios">Accesorios</a></li>
+            </ul>
+          </section>
+          <section aria-labelledby="legal-title">
+            <h2 id="legal-title" class="mb-4 text-sm uppercase tracking-widest">Legal</h2>
+            <ul class="space-y-2">
+              <li><a class="focus-ring velune-link" href="terminos.html">Términos y condiciones</a></li>
+              <li><a class="focus-ring velune-link" href="privacidad.html">Política de privacidad</a></li>
+              <li><a class="focus-ring velune-link" href="sobre-la-marca.html">Sobre la marca</a></li>
+            </ul>
+          </section>
+          <section aria-labelledby="contact-title">
+            <h2 id="contact-title" class="mb-4 text-sm uppercase tracking-widest">Contacto</h2>
+            <address class="not-italic leading-relaxed">
+              <a class="focus-ring velune-link" href="mailto:bonjour@velune.example">bonjour@velune.example</a><br />
+              Paris, France
+            </address>
+          </section>
+        </div>
+        <div class="mt-14 border-t border-red-900 border-opacity-10 pt-6 text-sm">© 2026 VELUNE. L'élégance en mouvement.</div>
+      </div>
+    </footer>
+  </body>
+</html>
