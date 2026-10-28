@@ -11,16 +11,39 @@
 <body class="font-sans antialiased" style="background-color: #F1E9E2; color: #171315;">
   <a href="#contenido" class="sr-only focus:not-sr-only focus:block focus:p-4 focus:underline">Saltar al contenido</a>
 
-  <header class="border-b border-black border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;">
-    <div class="max-w-7xl mx-auto px-6 py-6 sm:px-8 lg:px-12 flex flex-col items-center gap-5 md:flex-row md:justify-between">
-      <a href="product.html" class="font-serif text-4xl" aria-label="VELUNE">VELUNE</a>
-      <nav aria-label="Navegación principal">
-        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
-          <li><a href="product.html" aria-current="page" class="inline-block py-2 border-b border-current font-semibold">La pieza</a></li>
-          <li><a href="#detalles" class="inline-block py-2 hover:underline">Detalles</a></li>
-          <li><a href="#maison" class="inline-block py-2 hover:underline">La Maison</a></li>
-        </ul>
-      </nav>
+  <header class="velune-header border-b border-current border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;" itemscope itemtype="https://schema.org/WPHeader">
+    <div class="max-w-7xl mx-auto px-6 py-5 lg:px-10">
+      <div class="flex flex-wrap items-center justify-between gap-5">
+        <a class="focus-ring flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-current" href="Home.html" aria-label="VELUNE, página de inicio" itemprop="url">
+          <img class="h-12 w-auto" src="VELUNE-imagotipo.svg" alt="VELUNE" itemprop="logo">
+        </a>
+        <form class="order-3 w-full lg:order-none lg:w-auto lg:flex-1 lg:max-w-md lg:mx-12" action="catalogo.html" method="get" role="search">
+          <label class="sr-only" for="site-search">Buscar productos</label>
+          <div class="relative">
+            <input id="site-search" name="q" class="focus-ring w-full bg-transparent border-b border-current py-2 pr-10 placeholder-current placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-current" type="search" placeholder="Buscar en VELUNE">
+            <button class="focus-ring absolute right-0 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-current" type="submit" aria-label="Enviar búsqueda">⌕</button>
+          </div>
+        </form>
+        <nav class="desktop-nav hidden md:block" aria-label="Navegación principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
+          <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="cuenta.html" itemprop="url">Cuenta</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html" itemprop="url">Catálogo</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+          </ul>
+        </nav>
+        <details class="mobile-nav relative block md:hidden">
+          <summary class="focus-ring list-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-current" aria-label="Abrir menú de navegación">
+            <img class="mobile-nav__icon h-10 w-8 object-contain" src="VELUNE-isotipo.svg" alt="Menú VELUNE">
+          </summary>
+          <nav class="mobile-nav__panel absolute right-0 top-12 mt-1 z-10 w-48 border p-4 shadow-xl" style="background-color: #F1E9E2; border-color: rgba(143, 36, 60, .2);" aria-label="Navegación móvil" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <ul class="text-sm uppercase tracking-widest">
+              <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="cuenta.html" itemprop="url">Cuenta</a></li>
+              <li class="mt-3"><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html" itemprop="url">Catálogo</a></li>
+              <li class="mt-3"><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
     </div>
   </header>
 
@@ -97,31 +120,35 @@
     </article>
   </main>
 
-  <footer class="border-t border-black border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;">
-    <div class="max-w-7xl mx-auto px-6 py-12 sm:px-8 lg:px-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <section id="maison" aria-labelledby="titulo-maison">
-          <h2 id="titulo-maison" class="font-serif text-3xl">VELUNE</h2>
-          <p class="mt-4 text-sm leading-relaxed" lang="fr">L'élégance en mouvement.</p>
-          <p class="mt-2 text-sm leading-relaxed max-w-xs">Una mirada íntima y contemporánea al vestuario de inspiración francesa.</p>
-        </section>
-        <nav aria-labelledby="titulo-explorar">
-          <h2 id="titulo-explorar" class="text-sm font-semibold mb-4">Explorar</h2>
-          <ul class="space-y-3 text-sm">
-            <li><a href="product.html" class="hover:underline">Vestido Camille</a></li>
-            <li><a href="#detalles" class="hover:underline">Materiales y cuidados</a></li>
-            <li><a href="#maison" class="hover:underline">La Maison</a></li>
+  <footer class="velune-header border-t border-current border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="max-w-7xl mx-auto px-6 py-14 lg:px-10">
+      <div class="grid gap-10 md:grid-cols-3">
+        <section aria-labelledby="categories-title">
+          <h2 id="categories-title" class="mb-4 text-sm uppercase tracking-widest">Categorías</h2>
+          <ul class="space-y-2">
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html?categoria=calzado">Calzado</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html?categoria=camisas">Camisas</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html?categoria=pantalones">Pantalones</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalogo.html?categoria=accesorios">Accesorios</a></li>
           </ul>
-        </nav>
-        <section aria-labelledby="titulo-contacto">
-          <h2 id="titulo-contacto" class="text-sm font-semibold mb-4">Contacto</h2>
-          <p class="text-sm leading-relaxed">Atención al cliente próximamente.</p>
+        </section>
+        <section aria-labelledby="legal-title">
+          <h2 id="legal-title" class="mb-4 text-sm uppercase tracking-widest">Legal</h2>
+          <ul class="space-y-2">
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="terminos.html">Términos y condiciones</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="privacidad.html">Política de privacidad</a></li>
+            <li><a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="sobre-la-marca.html">Sobre la marca</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="contact-title">
+          <h2 id="contact-title" class="mb-4 text-sm uppercase tracking-widest">Contacto</h2>
+          <address class="not-italic leading-relaxed">
+            <a class="focus-ring velune-link focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="mailto:bonjour@velune.example">bonjour@velune.example</a><br>
+            Paris, France
+          </address>
         </section>
       </div>
-      <div class="mt-10 pt-5 border-t border-black border-opacity-20 flex flex-col gap-3 sm:flex-row sm:justify-between text-xs">
-        <p>© 2026 VELUNE</p>
-        <p>Proyecto académico · Sin venta online</p>
-      </div>
+      <div class="mt-14 border-t border-current border-opacity-10 pt-6 text-sm">© 2026 VELUNE. L'élégance en mouvement.</div>
     </div>
   </footer>
 </body>
