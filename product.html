@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vestido Camille de VELUNE: una silueta fluida de inspiración francesa. Descubre sus detalles, materiales y tallas.">
+  <meta name="theme-color" content="#D7C8BC">
+  <title>Vestido Camille | VELUNE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="font-sans antialiased" style="background-color: #F1E9E2; color: #171315;">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:block focus:p-4 focus:underline">Saltar al contenido</a>
+
+  <header class="border-b border-black border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;">
+    <div class="max-w-7xl mx-auto px-6 py-6 sm:px-8 lg:px-12 flex flex-col items-center gap-5 md:flex-row md:justify-between">
+      <a href="product.html" class="font-serif text-4xl" aria-label="VELUNE">VELUNE</a>
+      <nav aria-label="Navegación principal">
+        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
+          <li><a href="product.html" aria-current="page" class="inline-block py-2 border-b border-current font-semibold">La pieza</a></li>
+          <li><a href="#detalles" class="inline-block py-2 hover:underline">Detalles</a></li>
+          <li><a href="#maison" class="inline-block py-2 hover:underline">La Maison</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1" class="max-w-7xl mx-auto px-6 py-10 sm:px-8 lg:px-12 lg:py-14">
+    <article aria-labelledby="nombre-producto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <figure class="min-w-0">
+          <img
+            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+            alt="Vestido largo de tirantes, con cuerpo ajustado y falda amplia"
+            width="800"
+            height="1000"
+            fetchpriority="high"
+            class="block w-full h-auto bg-gray-200"
+          >
+          <figcaption class="sr-only">Fotografía de referencia para el Vestido Camille.</figcaption>
+        </figure>
+
+        <div class="min-w-0 lg:py-6">
+          <header>
+            <p class="text-xs uppercase mb-4" style="color: #8F243C;">Le vestiaire VELUNE</p>
+            <h1 id="nombre-producto" class="font-serif text-4xl sm:text-5xl leading-tight" style="color: #8F243C;">Vestido Camille</h1>
+            <dl class="flex flex-wrap gap-x-2 text-xs mt-4">
+              <dt>Referencia:</dt>
+              <dd>VEL-CAM-001</dd>
+            </dl>
+            <p class="mt-6 max-w-md text-sm leading-relaxed">Una silueta que acompaña el movimiento. Líneas delicadas y una caída fluida para una elegancia sin esfuerzo.</p>
+          </header>
+
+          <fieldset class="mt-8">
+            <legend class="sr-only">Opciones del Vestido Camille</legend>
+
+            <label for="talla" class="block text-sm font-semibold mb-2">Talla</label>
+            <select id="talla" name="talla" class="w-full h-12 border border-black border-opacity-30 bg-transparent px-3 text-sm rounded-none focus:ring-2 focus:ring-current" style="color: #8F243C;">
+              <option value="" selected disabled>Selecciona una talla</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+            </select>
+
+            <p class="mt-7 mb-7 text-2xl" style="color: #8F243C;">
+              <span class="sr-only">Precio:</span>
+              <data value="189.00">189,00 €</data>
+            </p>
+
+            <label for="cantidad" class="block text-sm font-semibold mb-2">Cantidad</label>
+            <input id="cantidad" name="cantidad" type="number" min="1" step="1" value="1" class="block w-24 h-12 border border-black border-opacity-30 bg-transparent px-3 text-sm rounded-none focus:ring-2 focus:ring-current" style="color: #8F243C;">
+
+            <button type="button" disabled aria-describedby="aviso-carrito" class="mt-6 w-full min-h-0 py-4 px-5 text-sm text-white cursor-not-allowed" style="background-color: #8F243C;">Agregar al carrito</button>
+            <p id="aviso-carrito" class="sr-only">La compra no está disponible en este prototipo. Elegir talla y cantidad no agrega productos a un carrito.</p>
+          </fieldset>
+
+          <div class="mt-8 pt-5 border-t border-black border-opacity-20">
+            <a href="#detalles" class="text-sm underline underline-offset-4" style="color: #8F243C;">Materiales y uso recomendado</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="detalles" aria-labelledby="titulo-detalles" class="mt-12 pt-8 border-t border-black border-opacity-20 lg:mt-16">
+        <h2 id="titulo-detalles" class="font-serif text-3xl mb-7" style="color: #8F243C;">El detalle importa</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <section aria-labelledby="titulo-materiales">
+            <h3 id="titulo-materiales" class="text-sm font-semibold mb-3" style="color: #8F243C;">Materiales</h3>
+            <p class="text-sm leading-relaxed max-w-lg">Propuesta de composición: 70 % viscosa y 30 % lino. Un tejido ligero de tacto suave y caída natural.</p>
+          </section>
+          <section aria-labelledby="titulo-uso">
+            <h3 id="titulo-uso" class="text-sm font-semibold mb-3" style="color: #8F243C;">Uso recomendado</h3>
+            <p class="text-sm leading-relaxed max-w-lg">Para una cena, una celebración íntima o un paseo de verano. Combínalo con sandalias y accesorios discretos.</p>
+          </section>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="border-t border-black border-opacity-10" style="background-color: #D7C8BC; color: #8F243C;">
+    <div class="max-w-7xl mx-auto px-6 py-12 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <section id="maison" aria-labelledby="titulo-maison">
+          <h2 id="titulo-maison" class="font-serif text-3xl">VELUNE</h2>
+          <p class="mt-4 text-sm leading-relaxed" lang="fr">L'élégance en mouvement.</p>
+          <p class="mt-2 text-sm leading-relaxed max-w-xs">Una mirada íntima y contemporánea al vestuario de inspiración francesa.</p>
+        </section>
+        <nav aria-labelledby="titulo-explorar">
+          <h2 id="titulo-explorar" class="text-sm font-semibold mb-4">Explorar</h2>
+          <ul class="space-y-3 text-sm">
+            <li><a href="product.html" class="hover:underline">Vestido Camille</a></li>
+            <li><a href="#detalles" class="hover:underline">Materiales y cuidados</a></li>
+            <li><a href="#maison" class="hover:underline">La Maison</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="titulo-contacto">
+          <h2 id="titulo-contacto" class="text-sm font-semibold mb-4">Contacto</h2>
+          <p class="text-sm leading-relaxed">Atención al cliente próximamente.</p>
+        </section>
+      </div>
+      <div class="mt-10 pt-5 border-t border-black border-opacity-20 flex flex-col gap-3 sm:flex-row sm:justify-between text-xs">
+        <p>© 2026 VELUNE</p>
+        <p>Proyecto académico · Sin venta online</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
