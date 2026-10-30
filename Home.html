@@ -19,7 +19,39 @@
   </head>
 
   <body class="antialiased">
-    <!--#include virtual="components/header.html" -->
+    <header class="velune-header border-b border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPHeader">
+      <div class="max-w-7xl mx-auto px-6 py-5 lg:px-10">
+        <div class="flex flex-wrap items-center justify-between gap-5">
+          <a class="focus-ring flex-shrink-0" href="Home.html" aria-label="VELUNE, página de inicio" itemprop="url">
+            <img class="h-12 w-auto" src="VELUNE-imagotipo.svg" alt="VELUNE" itemprop="logo" />
+          </a>
+          <form class="order-3 w-full lg:order-none lg:w-auto lg:flex-1 lg:max-w-md lg:mx-12" action="catalog.html" method="get" role="search">
+            <label class="sr-only" for="site-search">Buscar productos</label>
+            <div class="relative">
+              <input id="site-search" name="q" class="focus-ring w-full bg-transparent border-b border-current py-2 pr-10 placeholder-current placeholder-opacity-70" type="search" placeholder="Buscar en VELUNE" />
+              <button class="focus-ring absolute right-0 top-1/2 transform -translate-y-1/2 p-2" type="submit" aria-label="Enviar búsqueda">⌕</button>
+            </div>
+          </form>
+          <nav class="desktop-nav" aria-label="Navegación principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
+              <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+              <li><a class="focus-ring velune-link" href="catalog.html" itemprop="url">Catálogo</a></li>
+              <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
+            </ul>
+          </nav>
+          <details class="mobile-nav">
+            <summary class="focus-ring" aria-label="Abrir menú de navegación"><img class="mobile-nav__icon" src="VELUNE-isotipo.svg" alt="Menú VELUNE" /></summary>
+            <nav class="mobile-nav__panel" aria-label="Navegación móvil" itemscope itemtype="https://schema.org/SiteNavigationElement">
+              <ul class="text-sm uppercase tracking-widest">
+                <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+                <li><a class="focus-ring velune-link" href="catalog.html" itemprop="url">Catálogo</a></li>
+                <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
+              </ul>
+            </nav>
+          </details>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero-panel text-white" aria-labelledby="hero-title">
@@ -27,7 +59,7 @@
           <p class="mb-5 text-sm uppercase tracking-widest text-gray-200">Collection 01 · Paris</p>
           <h1 id="hero-title" class="max-w-2xl text-5xl leading-tight font-serif md:text-7xl">La sensualidad de lo que no se revela por completo.</h1>
           <p class="mt-7 max-w-lg text-lg leading-relaxed text-gray-100">Una presencia construida mediante cortes precisos, movimiento, tacto y misterio.</p>
-          <a class="focus-ring velune-button inline-block mt-10 px-7 py-4 text-sm uppercase tracking-widest" href="catalogo.html">Descubrir la colección</a>
+          <a class="focus-ring velune-button inline-block mt-10 px-7 py-4 text-sm uppercase tracking-widest" href="catalog.html">Descubrir la colección</a>
         </div>
       </section>
 
@@ -37,27 +69,27 @@
             <p class="text-sm uppercase tracking-widest velune-title">Sélection VELUNE</p>
             <h2 id="new-arrivals-title" class="velune-title mt-2 text-4xl font-serif">Nuevos lanzamientos</h2>
           </div>
-          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalogo.html">Ver catálogo</a>
+          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalog.html">Ver catálogo</a>
         </div>
         <div class="flex gap-6 overflow-x-auto pb-4" itemscope itemtype="https://schema.org/ItemList">
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--silk rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Robe Sillage</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Robe Sillage</a></h3>
             <p class="mt-1" itemprop="description">Seda fluida en rouge désir.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--noir rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Veste Ligne</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Veste Ligne</a></h3>
             <p class="mt-1" itemprop="description">Corte preciso en noir velours.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--ivoire rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Chemise Peau</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Chemise Peau</a></h3>
             <p class="mt-1" itemprop="description">Textura ligera en ivoire peau.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--rose rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Pantalon Élan</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Pantalon Élan</a></h3>
             <p class="mt-1" itemprop="description">Una silueta que acompaña el movimiento.</p>
           </article>
         </div>
@@ -69,33 +101,42 @@
             <p class="text-sm uppercase tracking-widest velune-title">Le choix de la maison</p>
             <h2 id="bestsellers-title" class="velune-title mt-2 text-4xl font-serif">Más vendidos</h2>
           </div>
-          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalogo.html">Explorar piezas</a>
+          <a class="focus-ring velune-link hidden text-sm uppercase tracking-widest md:inline-block" href="catalog.html">Explorar piezas</a>
         </div>
         <div class="flex gap-6 overflow-x-auto pb-4" itemscope itemtype="https://schema.org/ItemList">
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--noir rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Top Mystère</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Top Mystère</a></h3>
             <p class="mt-1" itemprop="description">Una línea esencial en negro carbón.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--rose rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Sac Désir</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Sac Désir</a></h3>
             <p class="mt-1" itemprop="description">Accesorio estructurado en rojo burdeos.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--ivoire rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Pantalon Silence</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Pantalon Silence</a></h3>
             <p class="mt-1" itemprop="description">Volumen relajado en gris seda.</p>
           </article>
           <article class="flex-shrink-0 w-64 md:w-72" itemscope itemtype="https://schema.org/Product" itemprop="itemListElement">
             <div class="product-image product-image--silk rounded-sm"></div>
-            <h3 class="mt-4 text-lg font-serif" itemprop="name">Écharpe Contact</h3>
+            <h3 class="mt-4 text-lg font-serif" itemprop="name"><a class="focus-ring velune-link" href="product.html" itemprop="url">Écharpe Contact</a></h3>
             <p class="mt-1" itemprop="description">Un gesto suave para completar la silueta.</p>
           </article>
         </div>
       </section>
     </main>
 
-    <!--#include virtual="components/footer.html" -->
+    <footer class="velune-header border-t border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPFooter">
+      <div class="max-w-7xl mx-auto px-6 py-14 lg:px-10">
+        <div class="grid gap-10 md:grid-cols-3">
+          <section aria-labelledby="categories-title"><h2 id="categories-title" class="mb-4 text-sm uppercase tracking-widest">Categorías</h2><ul class="space-y-2"><li><a class="focus-ring velune-link" href="catalog.html?categoria=calzado">Calzado</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=camisas">Camisas</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=pantalones">Pantalones</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=accesorios">Accesorios</a></li></ul></section>
+          <section aria-labelledby="legal-title"><h2 id="legal-title" class="mb-4 text-sm uppercase tracking-widest">Legal</h2><ul class="space-y-2"><li><a class="focus-ring velune-link" href="terminos.html">Términos y condiciones</a></li><li><a class="focus-ring velune-link" href="privacidad.html">Política de privacidad</a></li><li><a class="focus-ring velune-link" href="sobre-la-marca.html">Sobre la marca</a></li></ul></section>
+          <section aria-labelledby="contact-title"><h2 id="contact-title" class="mb-4 text-sm uppercase tracking-widest">Contacto</h2><address class="not-italic leading-relaxed"><a class="focus-ring velune-link" href="mailto:bonjour@velune.example">bonjour@velune.example</a><br />Paris, France</address></section>
+        </div>
+        <div class="mt-14 border-t border-red-900 border-opacity-10 pt-6 text-sm">© 2026 VELUNE. L'élégance en mouvement.</div>
+      </div>
+    </footer>
   </body>
 </html>

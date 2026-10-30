@@ -28,7 +28,7 @@
           <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
             <li><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="cuenta.html" itemprop="url">Cuenta</a></li>
             <li><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalog.html" itemprop="url">Catálogo</a></li>
-            <li><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+            <li><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
           </ul>
         </nav>
         <details class="relative block md:hidden">
@@ -39,7 +39,7 @@
             <ul class="text-sm uppercase tracking-widest">
               <li><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="cuenta.html" itemprop="url">Cuenta</a></li>
               <li class="mt-3"><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="catalog.html" itemprop="url">Catálogo</a></li>
-              <li class="mt-3"><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-label="0 artículos">(0)</span></a></li>
+              <li class="mt-3"><a class="focus:outline-none focus:ring-2 focus:ring-current hover:underline" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
             </ul>
           </nav>
         </details>
@@ -91,14 +91,13 @@
 
     <section id="coleccion" aria-labelledby="titulo-coleccion">
       <h2 id="titulo-coleccion" class="sr-only">La colección</h2>
-      <p id="aviso-productos" class="sr-only">Las páginas de detalle no están disponibles en este prototipo. Los botones Ver producto están deshabilitados.</p>
       <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
         <li>
           <article id="vestidos" class="h-full flex flex-col" aria-labelledby="producto-camille">
             <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Vestido largo de tirantes" width="800" height="1000" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-camille" class="font-serif text-xl mt-4">Vestido Camille</h3>
             <p class="text-sm mt-2 mb-4">189,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vestido Camille" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vestido Camille" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -106,7 +105,7 @@
             <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Pantalón de corte amplio y cintura alta" width="800" height="1000" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-juliette" class="font-serif text-xl mt-4">Pantalón Juliette</h3>
             <p class="text-sm mt-2 mb-4">145,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Pantalón Juliette" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Pantalón Juliette" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -114,7 +113,7 @@
             <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Camisa de manga larga con cuello clásico" width="800" height="1000" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-celeste" class="font-serif text-xl mt-4">Camisa Céleste</h3>
             <p class="text-sm mt-2 mb-4">125,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Camisa Céleste" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Camisa Céleste" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -122,7 +121,7 @@
             <img src="https://images.unsplash.com/photo-1548624149-f32204e4f0ca?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Abrigo de líneas rectas" width="800" height="1000" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-margot" class="font-serif text-xl mt-4">Abrigo Margot</h3>
             <p class="text-sm mt-2 mb-4">320,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Abrigo Margot" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Abrigo Margot" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -130,7 +129,7 @@
             <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Vestido ligero de silueta fluida" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-amelie" class="font-serif text-xl mt-4">Vestido Amélie</h3>
             <p class="text-sm mt-2 mb-4">175,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vestido Amélie" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vestido Amélie" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -138,7 +137,7 @@
             <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Jersey de punto con textura acanalada" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-louise" class="font-serif text-xl mt-4">Jersey Louise</h3>
             <p class="text-sm mt-2 mb-4">139,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Jersey Louise" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Jersey Louise" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -146,7 +145,7 @@
             <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Falda corta de cintura alta" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-ines" class="font-serif text-xl mt-4">Falda Inès</h3>
             <p class="text-sm mt-2 mb-4">115,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Falda Inès" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Falda Inès" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -154,7 +153,7 @@
             <img src="https://images.unsplash.com/photo-1551048632-24e444b48a3e?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Estilismo con chaqueta de corte relajado" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-soline" class="font-serif text-xl mt-4">Chaqueta Soline</h3>
             <p class="text-sm mt-2 mb-4">225,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Chaqueta Soline" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Chaqueta Soline" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -162,7 +161,7 @@
             <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Vestido de noche con caída suave" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-adele" class="font-serif text-xl mt-4">Vestido Adèle</h3>
             <p class="text-sm mt-2 mb-4">210,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vestido Adèle" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vestido Adèle" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -170,7 +169,7 @@
             <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Prenda de manga larga con cuello abierto" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-claire" class="font-serif text-xl mt-4">Blusa Claire</h3>
             <p class="text-sm mt-2 mb-4">119,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Blusa Claire" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Blusa Claire" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -178,7 +177,7 @@
             <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Pantalón vaquero de corte ajustado" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-manon" class="font-serif text-xl mt-4">Vaquero Manon</h3>
             <p class="text-sm mt-2 mb-4">129,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vaquero Manon" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vaquero Manon" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -186,7 +185,7 @@
             <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Prenda de punto de textura suave" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-elise" class="font-serif text-xl mt-4">Jersey Élise</h3>
             <p class="text-sm mt-2 mb-4">155,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Jersey Élise" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Jersey Élise" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -194,7 +193,7 @@
             <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Vestido de silueta alargada fotografiado en exterior" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-victoire" class="font-serif text-xl mt-4">Vestido Victoire</h3>
             <p class="text-sm mt-2 mb-4">195,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vestido Victoire" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vestido Victoire" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -202,7 +201,7 @@
             <img src="https://images.unsplash.com/photo-1548624149-f32204e4f0ca?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Prenda de abrigo de corte clásico" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-leonie" class="font-serif text-xl mt-4">Abrigo Léonie</h3>
             <p class="text-sm mt-2 mb-4">285,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Abrigo Léonie" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Abrigo Léonie" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -210,7 +209,7 @@
             <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Pantalón amplio con caída recta" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-alice" class="font-serif text-xl mt-4">Pantalón Alice</h3>
             <p class="text-sm mt-2 mb-4">149,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Pantalón Alice" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Pantalón Alice" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -218,7 +217,7 @@
             <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Jersey con tejido de punto acanalado" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-noemie" class="font-serif text-xl mt-4">Jersey Noémie</h3>
             <p class="text-sm mt-2 mb-4">135,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Jersey Noémie" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Jersey Noémie" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -226,7 +225,7 @@
             <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Falda de silueta estructurada y cintura marcada" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-charlotte" class="font-serif text-xl mt-4">Falda Charlotte</h3>
             <p class="text-sm mt-2 mb-4">125,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Falda Charlotte" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Falda Charlotte" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -234,7 +233,7 @@
             <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Camisa de cuello clásico y manga larga" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-mathilde" class="font-serif text-xl mt-4">Camisa Mathilde</h3>
             <p class="text-sm mt-2 mb-4">135,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Camisa Mathilde" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Camisa Mathilde" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -242,7 +241,7 @@
             <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Vestido vaporoso con detalles delicados" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-rosee" class="font-serif text-xl mt-4">Vestido Rosée</h3>
             <p class="text-sm mt-2 mb-4">205,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Vestido Rosée" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Vestido Rosée" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
         <li>
@@ -250,7 +249,7 @@
             <img src="https://images.unsplash.com/photo-1548624149-f32204e4f0ca?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Abrigo de silueta larga" width="800" height="1000" loading="lazy" class="w-full h-96 lg:h-80 object-cover bg-gray-200">
             <h3 id="producto-aurelie" class="font-serif text-xl mt-4">Abrigo Aurélie</h3>
             <p class="text-sm mt-2 mb-4">345,00 €</p>
-            <button type="button" disabled aria-label="Ver producto: Abrigo Aurélie" aria-describedby="aviso-productos" class="mt-auto w-full h-11 border border-current text-sm cursor-not-allowed" style="color: #8F243C;">Ver producto</button>
+            <a href="product.html" aria-label="Ver producto: Abrigo Aurélie" class="mt-auto flex items-center justify-center w-full h-11 border border-current text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-current" style="color: #8F243C;">Ver producto</a>
           </article>
         </li>
       </ul>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="https://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Términos y condiciones de la tienda VELUNE.">
+  <meta name="theme-color" content="#D7C8BC">
+  <title>Términos y condiciones | VELUNE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:block focus:p-4 focus:underline">Saltar al contenido</a>
+
+  <header class="velune-header border-b border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPHeader">
+    <div class="max-w-7xl mx-auto px-6 py-5 lg:px-10">
+      <div class="flex flex-wrap items-center justify-between gap-5">
+        <a class="focus-ring flex-shrink-0" href="Home.html" aria-label="VELUNE, página de inicio" itemprop="url">
+          <img class="h-12 w-auto" src="VELUNE-imagotipo.svg" alt="VELUNE" itemprop="logo" />
+        </a>
+        <form class="order-3 w-full lg:order-none lg:w-auto lg:flex-1 lg:max-w-md lg:mx-12" action="catalog.html" method="get" role="search">
+          <label class="sr-only" for="site-search">Buscar productos</label>
+          <div class="relative">
+            <input id="site-search" name="q" class="focus-ring w-full bg-transparent border-b border-current py-2 pr-10 placeholder-current placeholder-opacity-70" type="search" placeholder="Buscar en VELUNE" />
+            <button class="focus-ring absolute right-0 top-1/2 transform -translate-y-1/2 p-2" type="submit" aria-label="Enviar búsqueda">⌕</button>
+          </div>
+        </form>
+        <nav class="desktop-nav" aria-label="Navegación principal" itemscope itemtype="https://schema.org/SiteNavigationElement">
+          <ul class="flex items-center gap-5 text-sm uppercase tracking-widest">
+            <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+            <li><a class="focus-ring velune-link" href="catalog.html" itemprop="url">Catálogo</a></li>
+            <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
+          </ul>
+        </nav>
+        <details class="mobile-nav">
+          <summary class="focus-ring" aria-label="Abrir menú de navegación"><img class="mobile-nav__icon" src="VELUNE-isotipo.svg" alt="Menú VELUNE" /></summary>
+          <nav class="mobile-nav__panel" aria-label="Navegación móvil" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <ul class="text-sm uppercase tracking-widest">
+              <li><a class="focus-ring velune-link" href="cuenta.html" itemprop="url">Cuenta</a></li>
+              <li><a class="focus-ring velune-link" href="catalog.html" itemprop="url">Catálogo</a></li>
+              <li><a class="focus-ring velune-link" href="carrito.html" itemprop="url">Carrito <span aria-hidden="true">(3)</span><span class="sr-only">3 artículos</span></a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1" class="max-w-3xl mx-auto px-6 pt-10 pb-16 sm:px-8 lg:pt-14">
+    <header class="pb-8">
+      <p class="velune-title text-xs uppercase mb-3">Legal</p>
+      <h1 class="velune-title font-serif text-4xl sm:text-5xl">Términos y condiciones</h1>
+    </header>
+    <p class="text-sm leading-relaxed mb-8">Texto provisional de este prototipo. No constituye un documento legal definitivo.</p>
+    <section class="mt-8">
+      <h2 class="velune-title font-serif text-2xl mb-3">Uso del sitio</h2>
+      <p class="text-sm leading-relaxed">Este sitio presenta un prototipo de la tienda online de VELUNE con fines de demostración.</p>
+    </section>
+    <section class="mt-8">
+      <h2 class="velune-title font-serif text-2xl mb-3">Pedidos y pagos</h2>
+      <p class="text-sm leading-relaxed">Este prototipo no procesa pedidos ni pagos. Los productos y precios son ilustrativos.</p>
+    </section>
+  </main>
+
+  <footer class="velune-header border-t border-red-900 border-opacity-10" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="max-w-7xl mx-auto px-6 py-14 lg:px-10">
+      <div class="grid gap-10 md:grid-cols-3">
+        <section aria-labelledby="categories-title"><h2 id="categories-title" class="mb-4 text-sm uppercase tracking-widest">Categorías</h2><ul class="space-y-2"><li><a class="focus-ring velune-link" href="catalog.html?categoria=calzado">Calzado</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=camisas">Camisas</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=pantalones">Pantalones</a></li><li><a class="focus-ring velune-link" href="catalog.html?categoria=accesorios">Accesorios</a></li></ul></section>
+        <section aria-labelledby="legal-title"><h2 id="legal-title" class="mb-4 text-sm uppercase tracking-widest">Legal</h2><ul class="space-y-2"><li><a class="focus-ring velune-link" href="terminos.html">Términos y condiciones</a></li><li><a class="focus-ring velune-link" href="privacidad.html">Política de privacidad</a></li><li><a class="focus-ring velune-link" href="sobre-la-marca.html">Sobre la marca</a></li></ul></section>
+        <section aria-labelledby="contact-title"><h2 id="contact-title" class="mb-4 text-sm uppercase tracking-widest">Contacto</h2><address class="not-italic leading-relaxed"><a class="focus-ring velune-link" href="mailto:bonjour@velune.example">bonjour@velune.example</a><br />Paris, France</address></section>
+      </div>
+      <div class="mt-14 border-t border-red-900 border-opacity-10 pt-6 text-sm">© 2026 VELUNE. L'élégance en mouvement.</div>
+    </div>
+  </footer>
+</body>
+</html>
