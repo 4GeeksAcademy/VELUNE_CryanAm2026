@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-labelledby="velune-symbol-title velune-symbol-description">
+  <title id="velune-symbol-title">Isotipo de VELUNE</title>
+  <desc id="velune-symbol-description">Letra V abstracta construida mediante pliegues inspirados en tejidos de alta costura.</desc>
+  <g id="velune-symbol">
+    <path d="M10 8 C31 15 46 38 60 75 C74 38 89 15 110 8 C91 43 76 79 60 126 C44 79 29 43 10 8Z" fill="#171315" />
+    <path d="M33 13 C43 31 52 52 60 75 C68 52 77 31 87 13 C76 22 67 37 60 55 C53 37 44 22 33 13Z" fill="#8F243C" />
+    <path d="M60 75 C68 96 76 113 88 126 C76 121 67 112 60 99 C53 112 44 121 32 126 C44 113 52 96 60 75Z" fill="#D7C8BC" />
+  </g>
+</svg>

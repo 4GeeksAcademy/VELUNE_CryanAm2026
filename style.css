@@ -1,0 +1,31 @@
+:root {
+  --velune-noir: #171315;
+  --velune-bordeaux: #8f243c;
+  --velune-ivoire: #f1e9e2;
+  --velune-soie: #d7c8bc;
+}
+
+body { background: var(--velune-ivoire); color: var(--velune-noir); }
+.velune-header { background: var(--velune-soie); color: var(--velune-bordeaux); }
+.velune-title, .velune-link { color: var(--velune-bordeaux); }
+.velune-link:hover { color: var(--velune-noir); }
+.velune-button { background: var(--velune-bordeaux); color: var(--velune-ivoire); }
+.velune-button:hover { background: var(--velune-noir); }
+.hero-panel { background: linear-gradient(105deg, rgba(23, 19, 21, .95) 0%, rgba(23, 19, 21, .72) 48%, rgba(143, 36, 60, .28) 100%), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85') center/cover; }
+.product-image { aspect-ratio: 4 / 5; object-fit: cover; }
+.product-image--silk { background: linear-gradient(140deg, #d7c8bc, #8f243c); }
+.product-image--noir { background: linear-gradient(140deg, #171315, #8f243c); }
+.product-image--ivoire { background: linear-gradient(140deg, #f1e9e2, #d7c8bc); }
+.product-image--rose { background: linear-gradient(140deg, #8f243c, #171315); }
+.focus-ring:focus { outline: 2px solid var(--velune-bordeaux); outline-offset: 3px; }
+.mobile-nav { display: none; }
+.mobile-nav summary { list-style: none; cursor: pointer; }
+.mobile-nav summary::-webkit-details-marker { display: none; }
+
+@media (max-width: 767px) {
+  .desktop-nav { display: none; }
+  .mobile-nav { display: block; position: relative; }
+  .mobile-nav__icon { width: 2rem; height: 2.5rem; object-fit: contain; }
+  .mobile-nav__panel { position: absolute; right: 0; top: 3.25rem; z-index: 10; min-width: 12rem; padding: 1rem 1.25rem; background: var(--velune-ivoire); border: 1px solid rgba(143, 36, 60, .2); box-shadow: 0 12px 30px rgba(23, 19, 21, .12); }
+  .mobile-nav__panel li + li { margin-top: .8rem; }
+}
